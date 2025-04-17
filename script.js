@@ -1,4 +1,4 @@
-const sección = [
+const seccion = [
   { nombre: "Mi información", tecnologia: "JavaScript", categoria: "Web" },
   { nombre: "Mis hobbies", tecnologia: "React", categoria: "Web" },
   { nombre: "Diamantes", tecnologia: "Python", categoria: "Backend" },
