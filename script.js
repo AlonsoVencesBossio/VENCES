@@ -1,7 +1,7 @@
 const proyectos = [
-  { nombre: "Calculadora", tecnologia: "JavaScript", categoria: "Web", archivo: "calculadora.md" },
-  { nombre: "ToDo App", tecnologia: "React", categoria: "Web", archivo: "todo-app.md" },
-  { nombre: "Gestor de gastos", tecnologia: "Python", categoria: "Backend", archivo: "gestor-gastos.md" },
+  { nombre: "Sobre mi", Descripción: "Pestaña que incluye información sobre mi vida", archivo: "sobremi.md" },
+  { nombre: "Hobbies", Descripción: "Pestaña que incluye información sobre mis hobbies", archivo: "hobbie.md" },
+  { nombre: "Arte", Descripción: "Pestaña que incluye distintas fotos sobre mis preferencias ", archivo: "arte.md" },
 ];
 
 const contenedor = document.getElementById("proyectos");
