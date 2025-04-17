@@ -1,5 +1,5 @@
 const proyectos = [
-  { nombre: "Calculadora", tecnologia: "JavaScript", categoria: "Web" },
+  { nombre: <li><a href="#" onclick="loadMarkdown('referencia.md')">🤝 Referencias</a></li>, tecnologia: "JavaScript", categoria: "Web" },
   { nombre: "ToDo App", tecnologia: "React", categoria: "Web" },
   { nombre: "Gestor de gastos", tecnologia: "Python", categoria: "Backend" },
 ];
