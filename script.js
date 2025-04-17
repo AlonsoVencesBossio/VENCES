@@ -1,7 +1,7 @@
 const proyectos = [
-  { nombre: <li><a href="#" onclick="loadMarkdown('referencia.md')">🤝 Referencias</a></li>, tecnologia: "JavaScript", categoria: "Web" },
-  { nombre: "ToDo App", tecnologia: "React", categoria: "Web" },
-  { nombre: "Gestor de gastos", tecnologia: "Python", categoria: "Backend" },
+  { nombre: "Calculadora", tecnologia: "JavaScript", categoria: "Web", archivo: "calculadora.md" },
+  { nombre: "ToDo App", tecnologia: "React", categoria: "Web", archivo: "todo-app.md" },
+  { nombre: "Gestor de gastos", tecnologia: "Python", categoria: "Backend", archivo: "gestor-gastos.md" },
 ];
 
 const contenedor = document.getElementById("proyectos");
@@ -11,7 +11,7 @@ function mostrarProyectos(lista) {
   contenedor.innerHTML = "";
   lista.forEach(p => {
     contenedor.innerHTML += `<div class="proyecto">
-      <h3>${p.nombre}</h3>
+      <h3><a href="${p.archivo}" target="_blank">${p.nombre}</a></h3>
       <p>Tecnología: ${p.tecnologia}</p>
       <p>Categoría: ${p.categoria}</p>
     </div>`;
