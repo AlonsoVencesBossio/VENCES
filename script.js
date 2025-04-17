@@ -1,7 +1,7 @@
-const seccion = [
-  { nombre: "Mi información", tecnologia: "JavaScript", categoria: "Web" },
-  { nombre: "Mis hobbies", tecnologia: "React", categoria: "Web" },
-  { nombre: "Diamantes", tecnologia: "Python", categoria: "Backend" },
+const proyectos = [
+  { nombre: "Calculadora", tecnologia: "JavaScript", categoria: "Web" },
+  { nombre: "ToDo App", tecnologia: "React", categoria: "Web" },
+  { nombre: "Gestor de gastos", tecnologia: "Python", categoria: "Backend" },
 ];
 
 const contenedor = document.getElementById("proyectos");
@@ -29,3 +29,4 @@ buscador.addEventListener("input", () => {
 });
 
 mostrarProyectos(proyectos);
+
