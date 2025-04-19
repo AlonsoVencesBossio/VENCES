@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi GitHub Page</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Estilos personalizados -->
+  <style>
+    body {
+      background-color: #f8c8dc;
+      font-family: 'Arial', sans-serif;
+      color: #4a4a4a;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .certificado-img {
+      width: 70%;
+      max-width: 500px;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+
+    .profile-img {
+      width: 100%;
+      height: 45vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profile-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .presentacion {
+      padding: 2rem 1rem 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .pantalla {
+      background-color: white;
+      width: 80%;
+      max-width: 900px;
+      margin: 2rem auto;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .tab {
+      background-color: #f9a8d4;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    .tab:hover {
+      background-color: #ec4899;
+    }
+
+    .contenido {
+      display: none;
+    }
+
+    .contenido.activo {
+      display: block;
+      padding: 1rem;
+      background-color: #fff0f5;
+      border-radius: 8px;
+    }
+
+    .subtabs {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+      flex-wrap: wrap;
+    }
+
+    .subtab {
+      background-color: #fbcfe8;
+      border: none;
+      padding: 0.4rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #4a4a4a;
+      transition: background 0.3s;
+    }
+
+    .subtab:hover {
+      background-color: #f472b6;
+      color: white;
+    }
+
+    .contenido-sub {
+      display: none;
+    }
+
+    .contenido-sub.activo {
+      display: block;
+      padding-top: 1rem;
+    }
+
+    .sobre-mi-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      text-align: left;
+      margin-top: 1rem;
+    }
+
+    .img-sobre-mi {
+      width: 200px;
+      height: auto;
+      border: 5px solid #a81e73; /* fucsia fuerte */
+    }
+
+    .texto-sobre-mi {
+      max-width: 500px;
+      font-size: 1.1rem;
+    }    
+
+  </style>
+</head>
+<body class="index-page">
+
+  <!-- Imagen de perfil -->
+  <header class="header d-flex flex-column">
+    <div class="profile-img">
+      <img src="assets/img/pngtree_pink screen 3d render minimalist_13372173_mod.jpg" alt="Foto de presentación" class="img-fluid">
+    </div>
+  </header>
+
+  <!-- Presentación -->
+  <div class="presentacion">
+    🌸 <strong>¡Hola, soy Merrie Villegas! </strong> 🌸<br>
+    y me encuentro en proceso de crear un portafolio funcional,<br>
+    lleno de color rosa y personalidad ✨
+  </div>
+
+  <!-- Pantalla principal -->
+  <div class="pantalla">
+    <div class="tabs">
+      <button class="tab" onclick="mostrar('inicio')">Inicio</button>
+      <button class="tab" onclick="mostrar('sobre')">Sobre mí</button>
+      <button class="tab" onclick="mostrar('portafolio')">Portafolio</button>
+      <button class="tab" onclick="mostrar('certificados')">Certificados</button>
+      <button class="tab" onclick="mostrar('contacto')">Contacto</button>
+    </div>
+
+    <div id="inicio" class="contenido activo">
+      <h2>¡Bienvenido/a!</h2>
+      <p>Este es mi portafolio personal donde combino diseño y código para mostrar mi progreso académico y profesional.</p>
+    </div>
+
+    <div id="sobre" class="contenido">
+      <h2>Sobre mí</h2> 
+      <div class="sobre-mi-container">
+        <img src="https://mvillegasuc.github.io/Proyecto_CS/VILLEGAS/assets/img/mvillegas.jpg" alt="Foto de Merrie Villegas" class="img-sobre-mi">
+        <div class="texto-sobre-mi">
+          <p>Soy estudiante del 7° ciclo de Ingeniería de Sistemas e Informática. Actualmente, como parte del curso de Construcción de Software, estoy enfocándome en el desarrollo de habilidades en programación, buscando crear un portafolio con detalle, color y armonía.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="portafolio" class="contenido">
+      <h2>Portafolio</h2>
+      <p>Esta sección busca reflejar mis habilidades técnicas y capacidad para documentar soluciones prácticas que he utilizado a lo largo de mi vida profesional.</p>
+
+      <div class="subtabs">
+        <button class="subtab" onclick="mostrarSub('soporte')">Soporte Técnico</button>
+        <button class="subtab" onclick="mostrarSub('oracle')">Oracle 19c</button>
+        <button class="subtab" onclick="mostrarSub('UniContinental')">Construcción de Software</button>
+      </div>
+
+      <div id="soporte" class="contenido-sub">
+        <h2>Soporte Técnico</h2>    
+        <div class="row align-items-center" style="text-align: left;">
+          <!-- Imagen al lado izquierdo -->
+          <div class="col-md-4 text-center">
+            <img src="https://mvillegasuc.github.io/Proyecto_CS/VILLEGAS/assets/img/tech_support.jpg" alt="Soporte Técnico" class="img-fluid" 
+                 style="max-width: 100%; border: 3px solid #a81e73; border-radius: 10px;">
+          </div>
+      
+          <!-- Opciones al lado derecho -->
+          <div class="col-md-8">
+            <ul>
+              <li><a href="docs/soporte/IMPRESORA_Instalar.txt" target="_blank">IMPRESORA: Instalar dispositivo</a></li>
+              <li><a href="docs/soporte/INTERNET_Ver_archivo_host.txt" target="_blank">Internet: Ver archivo host</a></li>
+              <li><a href="docs/soporte/StickyNotes_Notas_rapidas.txt" target="_blank">StickyNotes: Ver ubicación</a></li>
+              <li><a href="docs/soporte/USB_Inhabilitar.txt" target="_blank">USB: Inhabilitar puerto</a></li>
+              <li><a href="docs/soporte/REGEDIT_Usuario_temporal.txt" target="_blank">REGEDIT: Ver usuario temporal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>      
+
+      <div id="oracle" class="contenido-sub">
+        <h3>Oracle 19c</h3>
+        <p>Consultas SQL, procedimientos y estructuras de base de datos diseñadas en Oracle 19c como parte de mis prácticas académicas.</p>
+        <div class="row align-items-center" style="text-align: left;">
+          <div class="col-md-4 text-center">
+            <img src="https://mvillegasuc.github.io/Proyecto_CS/VILLEGAS/assets/img/database.jpg" alt="Oracle" class="img-fluid" 
+                 style="max-width: 100%; border: 3px solid #a81e73; border-radius: 10px;">
+          </div>
+          <div class="col-md-8">
+            <ul>
+              <li><a href="docs/oracle/BLOQUEAR_USUARIO.sql" target="_blank">Bloquear usuario</a></li>
+              <li><a href="docs/oracle/VER_FECHA_HORA_BD.sql" target="_blank">Ver fecha y hora de Base de Datos</a></li>
+              <li><a href="docs/oracle/VER_TAMAÑO_DE_ESQUEMA.sql" target="_blank">Ver tamaño de esquema</a></li>
+              <li><a href="docs/oracle/VER_USUARIO.sql" target="_blank">Ver usuario</a></li>
+              <li><a href="docs/oracle/VER_VERSION_BD.sql" target="_blank">Ver version de Base de Datos</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="UniContinental" class="contenido-sub">
+        <h3>Construcción de Software</h3>
+        <p>Productos Académicos desarrollados durante el curso.</p>
+        <ul style="text-align: left;">
+          <li><a href="https://github.com/MVillegasUC/Proyecto_CS" target="_blank">Producto Académico N°1: Crear repositorio GitHub</a></li>
+          <li><a href="https://mvillegasuc.github.io/Proyecto_CS/VILLEGAS/" target="_blank">Producto Académico N°1: Crear Portafolio</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="certificados" class="contenido">
+      <h3>Certificados</h3>
+      <p>Estos son algunos de los certificados que he obtenido:</p>
+      <img src="assets/cert/PUCP_SQL_BASICO.JPG" alt="Certificado PUCP_SQL_BASICO" class="certificado-img">
+      <img src="assets/cert/NEW_HORIZONS_COMPTIA.JPG" alt="Certificado NEW_HORIZONS_COMPTIA" class="certificado-img">
+      <img src="assets/cert/Ingles_A1.JPG" alt="Certificado Ingles_A1" class="certificado-img">
+      <img src="assets/cert/INEI_Big_Data.JPG" alt="Certificado INEI_Big_Data" class="certificado-img">
+    </div>
+
+    <div id="contacto" class="contenido">
+      <div class="mt-3">
+        <a href="mailto:ing.mvillegas@gmail.com" style="color: hsl(310, 67%, 47%); margin: 0 10px;">
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com/mvillegasa" target="_blank" style="color: hsl(310, 67%, 47%); margin: 0 10px;">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://twitter.com/tu_usuario" target="_blank" style="color: hsl(310, 67%, 47%); margin: 0 10px;">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mvillegasa" target="_blank" style="color: hsl(310, 67%, 47%); margin: 0 10px;">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script pestañas -->
+  <script>
+    function mostrar(id) {
+      document.querySelectorAll('.contenido').forEach(el => {
+        el.classList.remove('activo');
+      });
+      document.getElementById(id).classList.add('activo');
+    }
+
+    function mostrarSub(id) {
+      document.querySelectorAll('.contenido-sub').forEach(el => {
+        el.classList.remove('activo');
+      });
+      document.getElementById(id).classList.add('activo');
+    }
+  </script>
+
+  <footer class="text-center py-3" style="background-color: #f8c8dc; color: #4a4a4a; font-weight: bold;">
+    © 2025 Merrie Villegas Arcentales. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
